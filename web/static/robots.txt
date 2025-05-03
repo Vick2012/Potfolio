@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tusitio.com/sitemap.xml
+path('robots.txt', serve, {'path': 'robots.txt', 'document_root': settings.BASE_DIR}),

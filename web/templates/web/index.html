@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Victor Alarcón, Ingeniero de Software apasionado por la tecnología y los desafíos.">
+  <title>Portafolio | Victor Alarcón</title>
+  <link rel="icon" href="{% static 'web/images/favicon.ico' %}" />
+  <link rel="stylesheet" href="{% static 'web/css/styles.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+  <button id="theme-toggle" class="theme-button" aria-label="Cambiar tema">🌙 Dark Mode</button>
+  <!-- HEADER: Redes sociales y tema -->
+  <header>
+    <nav class="social-icons" aria-label="Redes sociales">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:victorsloan2012@gmail.com" aria-label="Correo electrónico"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/victoralarcon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Vick2012" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </nav>
+    
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="carousel">
+
+    <!-- Slide 0: Portada -->
+    <section id="slide-0" class="slide active" aria-label="Portada">
+      <div class="top-bar">
+        <div class="portfolio-title-block">
+          <h1 class="portfolio-label">PORTFOLIO</h1>
+          <p class="portfolio-subtitle">Ingeniero de Software | Apasionado por la tecnología y por los desafíos.</p>
+        </div>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+          <p><i class="fas fa-phone"></i> +57 3058138022</p>
+          <p><i class="fas fa-envelope"></i> victorsloan2012@gmail.com</p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/victoralarcon" target="_blank">linkedin.com/in/victoralarcon</a></p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/Vick2012" target="_blank">github.com/Vick2012</a></p>
+        </div>
+        
+      </div>
+      <div class="floating-circles">
+        <div class="circle circle-main">
+          <img src="{% static 'web/images/perfil.jpg' %}" alt="Foto de Victor Alarcón" />
+        </div>
+        <div class="circle circle-back-1"></div>
+        <div class="circle circle-back-2"></div>
+      </div>
+      <div class="profile-info">
+        <h2 class="name">Victor Alfonso Alarcón Ospina</h2>
+        <h3 class="title">SOFTWARE ENGINEER</h3>
+      </div>
+    </section>
+    <div></div>
+    <!-- Slide 1: Sobre mí -->
+    <section id="slide-1" class="slide" aria-label="Sobre mí">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="{% static 'web/images/about.jpg' %}" alt="Foto profesional de Victor Alarcón" />
+        </div>
+        <div class="about-text">
+          <h2 class="about-title">About Me</h2>
+          <p class="about-description">Soy un ingeniero de software dedicado, creativo y orientado a resultados, apasionado por diseñar y desarrollar soluciones tecnológicas 
+            robustas, eficientes y escalables. Destaco por mi capacidad de adaptación a diferentes entornos y sectores, buscando siempre la mejor manera de aportar valor 
+            mediante el uso estratégico de la tecnología. Me motiva afrontar retos complejos, aprender continuamente y trabajar en proyectos que marcan la diferencia. Creo 
+            firmemente en la calidad del código y su arquitectura, la colaboración interdisciplinaria y el impacto positivo de la tecnología bien aplicada.</p>
+          <div class="experience-list">
+            <div class="experience-item"><strong class="position">SOFTWARE ENGINEER</strong><div class="company">Universidad Manuela Beltran. (2022–2026)</div></div>
+            <div class="experience-item"><strong class="position">SENIOR SOFTWARE DEVELOPER</strong><div class="company">CodeCraft Solutions (20XX–20XX)</div></div>
+            <div class="experience-item"><strong class="position">LEAD SOFTWARE DEVELOPER</strong><div class="company">InnovateTech Labs (20XX–20XX)</div></div>
+            <div class="experience-item"><strong class="position">SOFTWARE MANAGER</strong><div class="company">NexGen Software (20XX–20XX)</div></div>
+            <div class="experience-item"><strong class="position">JUNIOR SOFTWARE DEVELOPER</strong><div class="company">Tech Solutions Co. (20XX–20XX)</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2: Background -->
+    <section id="slide-2" class="slide" aria-label="Background y habilidades">
+      <h2 class="background-title">Background</h2>
+      <div class="background-grid">
+        <div class="background-column">
+          <h3>CERTIFICATIONS</h3>
+          <ul><li>AWS Certified Developer</li><li>Scrum Master Certification</li><li>Amazon Web Services</li></ul>
+        </div>
+        <div class="background-column">
+          <h3>PROGRAMMING LANGUAGES</h3>
+          <ul><li>Java</li><li>Python</li><li>C#</li><li>JavaScript (Node.js)</li></ul>
+        </div>
+        <div class="background-column">
+          <h3>DATABASE TECHNOLOGIES</h3>
+          <ul><li>MySQL</li><li>MongoDB</li><li>PostgreSQL</li></ul>
+        </div>
+        <div class="background-column">
+          <h3>CLOUD SERVICES</h3>
+          <ul><li>Amazon Web Services</li><li>Microsoft Azure</li></ul>
+        </div>
+      </div>
+      <div class="background-image">
+        <img src="{% static 'web/images/background.jpg' %}" alt="Imagen de fondo con laptop" />
+      </div>
+    </section>
+
+    <!-- Slide 3: Proyectos -->
+    <section id="slide-3" class="slide" aria-label="Proyectos">
+      <div class="project-card-layout">
+        <div class="project-image">
+          <img src="{% static 'web/images/project.jpg' %}" alt="Imagen de aplicación móvil de inventario" />
+        </div>
+        <div class="project-cards">
+          <h2 class="project-title">Projects</h2>
+          <h3 class="project-subtitle">Mobile App Development for Inventory Management</h3>
+
+          <div class="card">
+            <h4>Sistema de Gestión ERP</h4>
+            <p>ERP especializado en controlar, planificar y optimizar operaciones logísticas. Integra procesos en una sola plataforma.</p>
+            <p><strong>Tecnologías:</strong> React, Node.js, MongoDB</p>
+            <a href="https://github.com/Vick2012/ERP-pc.git" target="_blank">Ver ERP en GitHub</a>
+          </div>
+
+          <div class="card">
+            <h4>API de Tareas</h4>
+            <p>API RESTful para gestionar tareas con autenticación.</p>
+            <p><strong>Tecnologías:</strong> FastAPI, PostgreSQL, Python</p>
+            <a href="https://github.com/Vick2012/Api.git" target="_blank">Ver API en GitHub</a>
+          </div>
+
+          <div class="card">
+            <h4>Portafolio Personal</h4>
+            <p>Sitio web personal para mostrar mis proyectos y habilidades.</p>
+            <p><strong>Tecnologías:</strong> Python, Django, HTML5, CSS, JS, Node.js (SASS)</p>
+            <a href="https://github.com/Vick2012/Potfolio" target="_blank">Ver Portafolio en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Navegación -->
+  <nav class="nav-buttons" aria-label="Navegación entre secciones">
+    <button id="prevSlide">← Anterior</button>
+    <button id="nextSlide">Siguiente →</button>
+  </nav>
+
+  <!-- Carrusel JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      function showSlide(index) {
+        slides.forEach((slide, i) => slide.classList.toggle("active", i === index));
+      }
+      showSlide(currentSlide);
+      document.getElementById("prevSlide").addEventListener("click", () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      });
+      document.getElementById("nextSlide").addEventListener("click", () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      });
+    });
+  </script>
+
+  <!-- Modo Oscuro JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("theme-toggle");
+      const body = document.body;
+      body.classList.add("dark-theme");
+      toggleBtn.innerHTML = "☀️";
+      toggleBtn.addEventListener("click", () => {
+        const isDark = body.classList.contains("dark-theme");
+        body.classList.toggle("dark-theme", !isDark);
+        body.classList.toggle("light-theme", isDark);
+        toggleBtn.innerHTML = isDark ? "☀️" : "🌙";
+      });
+    });
+  </script>
+
+</body>
+</html>
