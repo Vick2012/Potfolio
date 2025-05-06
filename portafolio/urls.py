@@ -11,6 +11,6 @@ sitemaps = {
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('web.urls')),  # Mantiene la app web
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),  # ✅ Aquí se agrega el sitemap
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),  
     
 ]

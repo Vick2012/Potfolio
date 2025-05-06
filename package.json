@@ -1,9 +1,12 @@
 {
   "name": "portafolio",
   "version": "1.0.0",
- "scripts": {
-  "scss": "sass ../assets/scss/styles.scss web/static/web/css/styles.css"
-},
+  "scripts": {
+    "scss": "sass ../assets/scss/styles.scss web/static/web/css/styles.css"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
