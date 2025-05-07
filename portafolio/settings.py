@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import dj_database_url
 
 # Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,6 +24,9 @@ INSTALLED_APPS = [
 
 # Middleware
 MIDDLEWARE = [
+    
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -63,9 +67,11 @@ DATABASES = {
     }
 }
 
+
 # Static files
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'web', 'static')]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Internationalization
 USE_I18N = True
